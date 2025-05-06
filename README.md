@@ -36,8 +36,19 @@ Deno Deploy
 1. create project.
 2. Select repository, and check `Just link the repo, I’ll set up GitHub Actions myself`.
 3. `Settings` -> `Environment Variables` -> `+ Add Variable`
-4. key is `DATABASE_URL`, value, from `.env`, is like `prisma+postgres://accelerate...`
+   1. key is `DATABASE_URL`, value, from `.env`, is like `prisma+postgres://accelerate...`
+4. fix `.github/workflows/deploy.yml` and commit, push
 5. deploy
+
+```diff
+  - name: Upload to Deno Deploy
+    uses: denoland/deployctl@v1
+    with:
+-     project: "mr-ozin-prisma-deno-78"
++     project: "<your-deno-deploy-project-name>"
+      entrypoint: "index.ts"
+      root: "."
+```
 
 ## License
 
