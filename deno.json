@@ -1,7 +1,7 @@
 {
 	"tasks": {
-		"dev": "deno run --env-file=.env index.ts",
-		"generate": "deno run --env-file=.env -A npm:prisma generate",
+		"dev": "deno run --env-file=.env -A index.ts",
+		"generate": "deno run --env-file=.env -A npm:prisma generate --no-engine",
 		"studio": "deno run --env-file=.env -A npm:prisma studio"
 	},
 	"imports": {
