@@ -24,7 +24,7 @@ jobs:
           deno-version: v2.x
 
       - name: Build step
-        run: "deno task generate"
+        run: "deno run -A npm:prisma generate --no-engine"
 
       - name: Upload to Deno Deploy
         uses: denoland/deployctl@v1
