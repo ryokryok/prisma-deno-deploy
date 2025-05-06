@@ -1,4 +1,6 @@
 {
+	"author": "Mr_ozin",
+	"license": "MIT",
 	"tasks": {
 		"dev": "deno run --env-file=.env -A index.ts",
 		"generate": "deno run --env-file=.env -A npm:prisma generate --no-engine",
