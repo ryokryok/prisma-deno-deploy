@@ -27,7 +27,7 @@ deno task dev # run server at http://localhost:8000/
 deno task studio # open Prisma Studio
 ```
 
-### Deploy
+## Deploy
 
 Deno Deploy
 
